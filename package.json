@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "this is an app",
+  "main": "server.js",
+  "scripts": {
+    "debug": "node --nolazy --inspect-brk=9229 server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgcreiglow/FriendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgcreiglow/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/jgcreiglow/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
