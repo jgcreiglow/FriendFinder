@@ -9,12 +9,13 @@ module.exports = function (app) {
 
     // post my friends
     app.post('/api/friends', function (req, res) {
+        console.log(req.body)
         var userData = {
             name: req.body.name,
             photo: req.body.photo,
-            scores: req.body.scores
+            scores: req.body['scores[]']
         };
-        console.log(userData.scores);
+        console.log(userData);
         //loop through all friends 
         let bff = friends.reduce(function (bff, friend, index) {
            
@@ -34,7 +35,7 @@ module.exports = function (app) {
             return bff;
         }, null);
        
-        friends.push(user);
+        friends.push(userData);
 
         res.json(bff);
     });
