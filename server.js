@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 require('./app/routing/apiroutes')(app);
 require('./app/routing/htmlroutes')(app);
 
-var PORT = 3000;
+var PORT = process.env.PORT || 8080;
 
 
 app.listen(PORT, () =>{
