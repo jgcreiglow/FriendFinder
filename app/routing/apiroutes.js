@@ -9,16 +9,16 @@ module.exports = function (app) {
 
     // post my friends
     app.post('/api/friends', function (req, res) {
-        var user = {
+        var userData = {
             name: req.body.name,
             photo: req.body.photo,
             scores: req.body.scores
         };
-
+        console.log(userData.scores);
         //loop through all friends 
         let bff = friends.reduce(function (bff, friend, index) {
            
-            let difference = user.scores.reduce(function(memo, score, index2){
+            let difference = userData.scores.reduce(function(memo, score, index2){
                 return memo +  Math.abs(score - friends[index].scores[index2])
             }, 0);
 

@@ -1,0 +1,15 @@
+.qBox{
+    margin: 30px;
+    background-color: rgba(105, 177, 129, 0.5);
+    padding: 30px;
+    width: 600px;
+    margin-left: 30%
+}
+
+.custom-select{
+    width:200px;
+}
+
+.submit{
+    margin-left: 50%;
+}
